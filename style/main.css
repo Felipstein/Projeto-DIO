@@ -1,0 +1,66 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* assim, os componentes não expandem a caixa, mas se comprimem*/
+}
+
+/* Elementos base */
+
+body {
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white
+}
+
+header .container {
+    display: flex; /* uma maneira de alinhar os elementos na tela. o tipo flex tem modelo de deixar tudo em linha, deixa por padrão o flex-direction como row*/
+    flex-direction: row;
+    align-items: center; /* centralizando os elementos em linha reta */
+    justify-content: space-between; /* cria espaçamento entre as tags (.logo e outros)*/
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Relacionado ao Filme Principal (O BOM DOUTOR)*/
+
+.main-film {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .54),rgba(0, 0, 0, .54)100%), url('/img/cape-good-doctor.jpg');
+
+    height: 400px;
+    background-size: cover; /* assim, o background irá se adaptar ao tamanho da caixa*/
+
+    display: flex; /* jogando os elementos em linha, logo, os botões ficarão na frente*/
+    flex-direction: column; /* agora foram jogados embaixo*/
+    justify-content: center; /* deixa os elementos de dentro centralizados  */
+    align-items: flex-start; /* refere-se aos elementos de um lado, da esquerda para direita*/ 
+}
+
+.main-film .description {
+    margin-bottom: 90px;
+}
+
+.main-film .title {
+    font-size: 35px;
+}
