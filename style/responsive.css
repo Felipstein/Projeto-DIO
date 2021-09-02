@@ -1,0 +1,52 @@
+/* sempre que minha tela chegar no máximo de largura 700px, aplice o escopo*/
+
+@media screen and (max-width: 950px) {
+
+    .button {
+        margin-top: 5px;
+        width: 200px;
+        height: 60px;
+    }
+
+    .main-film {
+        height: 400px;
+    }
+
+    .main-film .title {
+        font-size: 25px;
+    }
+
+    .main-film .description {
+        font-size: 80%;
+        margin-bottom: 20px;
+    }
+
+    .main-film .container {
+        width: 250px;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex; /* uma maneira de alinhar os elementos na tela. o tipo flex tem modelo de deixar tudo em linha, deixa por padrão o flex-direction como row*/
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100px;
+        height: 45px;
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .main-film {
+        background-position-x: -160px;
+        transition: .3s;
+    }
+
+}

@@ -22,6 +22,8 @@ header .container {
     flex-direction: row;
     align-items: center; /* centralizando os elementos em linha reta */
     justify-content: space-between; /* cria espaçamento entre as tags (.logo e outros)*/
+    margin-left: 25px;
+    margin-right: 50px;
 }
 
 header .logo {
@@ -33,13 +35,13 @@ header .logo {
 
 header nav a {
     text-decoration: none;
-    color: #aaa;
+    color: #bdbdbd;
     margin-right: 10px;
 }
 
 header nav a:hover {
-    color: #fff;
-    text-decoration: underline;
+    color: #888;
+    transition: .3s;
 }
 
 /* Relacionado ao Filme Principal (O BOM DOUTOR)*/
@@ -48,7 +50,7 @@ header nav a:hover {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, .54),rgba(0, 0, 0, .54)100%), url('/img/cape-good-doctor.jpg');
 
-    height: 400px;
+    height: 500px;
     background-size: cover; /* assim, o background irá se adaptar ao tamanho da caixa*/
 
     display: flex; /* jogando os elementos em linha, logo, os botões ficarão na frente*/
@@ -57,10 +59,67 @@ header nav a:hover {
     align-items: flex-start; /* refere-se aos elementos de um lado, da esquerda para direita*/ 
 }
 
+.main-film .container {
+    width: 45%;
+    margin-left: 40px;
+}
+
 .main-film .description {
+    margin-top: 10px;
     margin-bottom: 90px;
+    font-size: 20px;
+    cursor: default;
+    user-select: none;
+    text-shadow: rgba(0, 0, 0, .5) 2px 2px 4px;
 }
 
 .main-film .title {
-    font-size: 35px;
+    margin-top: 10%;
+    margin-left: 10px;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: default;
+    user-select: none;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 4px;
 }
+
+.main-film .buttons {
+    margin-left: 0px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /* alterar o ponteiro para a mãozinha de clique*/
+    transition: .15s;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5%;
+    color: black;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.catalog {
+    margin-top: 5px;
+}
+
+/* WRAPPER = ENVELOPAR, o container é um exemplo de wrapper*/
+/* "envelopamos" o container, colocando dentro os botões, etc*/
